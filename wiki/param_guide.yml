@@ -1,0 +1,1614 @@
+COMP_FX1_MODES:
+  COMP:
+    id: '00'
+    color: Blue
+    explanation: Makes the sound sustain without distorting. Also works as a limiter
+      to suppress high volume input.
+    parameters:
+      SUSTAIN:
+        label: SUSTAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      ATTACK:
+        label: ATTACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  T.WAH UP:
+    id: '01'
+    color: Blue
+    explanation: Gives a wah effect according to picking dynamics. Filter frequency
+      rises.
+    parameters:
+      SENS:
+        label: SENS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      PEAK:
+        label: PEAK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  SLOW GEAR:
+    id: '02'
+    color: Blue
+    explanation: Creates a violin-like volume swell effect.
+    parameters:
+      SENS:
+        label: SENS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      ATTACK:
+        label: ATTACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  DEFRETTER:
+    id: '03'
+    color: Blue
+    explanation: Simulates a fretless guitar.
+    parameters:
+      SENS:
+        label: SENS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  OCTAVE:
+    id: '04'
+    color: Blue
+    explanation: Adds pitches one and two octaves lower.
+    parameters:
+      -1 OCT LEVEL:
+        label: -1 OCT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      -2 OCT LEVEL:
+        label: -2 OCT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DIRECT LEVEL:
+        label: DIRECT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  HUMANIZER:
+    id: '05'
+    color: Blue
+    explanation: Alters guitar tone to sound like a human voice.
+    parameters:
+      SENS:
+        label: SENS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      VOWEL1:
+        label: VOWEL1
+        type: symbolic
+        values:
+        - a
+        - e
+        - i
+        - o
+        - u
+        value_band: REQUIRES_VALIDATION
+      VOWEL2:
+        label: VOWEL2
+        type: symbolic
+        values:
+        - a
+        - e
+        - i
+        - o
+        - u
+        value_band: REQUIRES_VALIDATION
+  FEEDBACKER:
+    id: '06'
+    color: Blue
+    explanation: Generates feedback while the pedal is held down.
+    parameters:
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  AC SIM:
+    id: '07'
+    color: Blue
+    explanation: Makes electric guitar sound like an acoustic guitar.
+    parameters:
+      LOW:
+        label: LOW
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      HIGH:
+        label: HIGH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  SOLO:
+    id: 08
+    color: Blue
+    explanation: Boosts EQ for soloing when combined with OD/DS or PREAMP.
+    parameters:
+      LOW:
+        label: LOW
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      HIGH:
+        label: HIGH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TUNE DOWN:
+    id: 09
+    color: Blue
+    explanation: Simulates tuning your guitar lower.
+    parameters:
+      PITCH:
+        label: PITCH
+        type: numeric
+        ui_range: -12–0
+        value_band: REQUIRES_VALIDATION
+  S-BEND:
+    id: 0A
+    color: Blue
+    explanation: Pitch shift up/down not possible with a typical vibrato bar.
+    parameters:
+      PITCH:
+        label: PITCH
+        type: numeric
+        ui_range: -3–+4
+        value_band: REQUIRES_VALIDATION
+      RISE TIME:
+        label: RISE TIME
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      FALL TIME:
+        label: FALL TIME
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  D-COMP:
+    id: 0B
+    color: Blue
+    explanation: Models the MXR DynaComp.
+    parameters:
+      SUSTAIN:
+        label: SUSTAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      ATTACK:
+        label: ATTACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  RING MOD:
+    id: 0C
+    color: Blue
+    explanation: Combines internal oscillator with guitar signal for metallic, atonal
+      sound.
+    parameters:
+      FREQ:
+        label: FREQ
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DIRECT LEVEL:
+        label: DIRECT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MOD LEVEL:
+        label: MOD LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  POLY OCTAVE:
+    id: 0D
+    color: Blue
+    explanation: Polyphonic octave effect.
+    parameters:
+      RANGE:
+        label: RANGE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      -1 OCT LEVEL:
+        label: -1 OCT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DIRECT LEVEL:
+        label: DIRECT LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  T.WAH DOWN:
+    id: 0E
+    color: Blue
+    explanation: Wah effect with filter frequency falling.
+    parameters:
+      SENS:
+        label: SENS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      PEAK:
+        label: PEAK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  Single > Hum:
+    id: 0F
+    color: Blue
+    explanation: Makes a single-coil pickup sound like a humbucker.
+    parameters:
+      LOW:
+        label: LOW
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      HIGH:
+        label: HIGH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  Hum > Single:
+    id: '10'
+    color: Blue
+    explanation: Makes a humbucker sound like a single-coil pickup.
+    parameters:
+      LOW:
+        label: LOW
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      HIGH:
+        label: HIGH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+OD_DS_MODES:
+  BOOST:
+    id: '00'
+    color: Yellow
+    explanation: Booster with midrange emphasis. Ideal for solos with AIRD preamps.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  OVERDRIVE:
+    id: '01'
+    color: Yellow
+    explanation: Sound of the BOSS SD-1.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  T-SCREAM:
+    id: '02'
+    color: Yellow
+    explanation: Models an Ibanez TS-808.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  CENTA OD:
+    id: '03'
+    color: Yellow
+    explanation: Models a KLON CENTAUR.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  BLUES OD:
+    id: '04'
+    color: Yellow
+    explanation: Sound of the BOSS BD-2.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  DISTORTION:
+    id: '05'
+    color: Orange
+    explanation: Sound of the BOSS DS-1.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TURBO DS:
+    id: '06'
+    color: Orange
+    explanation: 'DS-2 TURBO ON: Distortion with enhanced midrange.'
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  RAT DS:
+    id: '07'
+    color: Orange
+    explanation: Models a Proco RAT.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  METAL DS:
+    id: 08
+    color: Red
+    explanation: Sound of the BOSS METAL ZONE MT-2.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  CORE:
+    id: 09
+    color: Red
+    explanation: BOSS ML-2 for high-speed heavy metal riffs.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  MUFF FUZZ:
+    id: 0A
+    color: Red
+    explanation: Models an Electro-Harmonix Big Muff π.
+    parameters:
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+PREAMP_MODES:
+  NATURAL:
+    id: '00'
+    color: Green
+    explanation: Clean and neutral tone that minimizes amp coloration.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  X-CRUNCH:
+    id: '01'
+    color: Orange
+    explanation: Crunch sound using MDP for clarity across strings.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  X-HI GAIN:
+    id: '02'
+    color: Orange
+    explanation: High-gain tone with wide range and separation using MDP.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  MAXIMUM:
+    id: '03'
+    color: Orange
+    explanation: Vintage Marshall feel with more gain.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  JUGGERNAUT:
+    id: '04'
+    color: Red
+    explanation: Large-stack metal tone optimized for heavy genres.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  X-MODDED:
+    id: '05'
+    color: Red
+    explanation: Extreme gain with clear definition using MDP.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TWIN COMBO:
+    id: '06'
+    color: Green
+    explanation: Models Fender Twin Reverb.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TWEED COMBO:
+    id: '07'
+    color: Orange
+    explanation: Models Fender Bassman 4x10” combo.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  DIAMOND:
+    id: 08
+    color: Orange
+    explanation: Models VOX AC30.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  BRIT STACK:
+    id: 09
+    color: Orange
+    explanation: Models Marshall 1959.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  RECTI STACK:
+    id: 0A
+    color: Red
+    explanation: Models Channel 2 MODERN on Mesa/Boogie Dual Rectifier.
+    parameters:
+      GAIN:
+        label: GAIN
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+MOD_MODES:
+  PHASER:
+    id: '00'
+    color: Green
+    explanation: Adds an out-of-phase sound for a modulated, swelling effect.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      RESONANCE:
+        label: RESONANCE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  FLANGER:
+    id: '01'
+    color: Purple
+    explanation: Jet-plane style modulation.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      RESONANCE:
+        label: RESONANCE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TREMOLO:
+    id: '02'
+    color: Green
+    explanation: Retro cyclic volume modulation.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  CHORUS:
+    id: '03'
+    color: Light blue
+    explanation: Adds depth and spaciousness by mixing modulated signal with dry tone.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  VIBRATO:
+    id: '04'
+    color: Light blue
+    explanation: Wild pitch modulation effect.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  PITCH SHIFT:
+    id: '05'
+    color: Light blue
+    explanation: Shifts the pitch of the original sound up or down by 2 octaves.
+    parameters:
+      PITCH:
+        label: PITCH
+        type: numeric
+        ui_range: -24–DETUNE–+24
+        value_band: REQUIRES_VALIDATION
+      D. LEVEL:
+        label: D. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  HARMONIST:
+    id: '06'
+    color: Light blue
+    explanation: Diatonic harmony effect based on set key and harmony interval.
+    parameters:
+      KEY:
+        label: KEY
+        type: numeric
+        ui_range: C (Am)–B (G´m)
+        value_band: REQUIRES_VALIDATION
+      HARMONY:
+        label: HARMONY
+        type: numeric
+        ui_range: -8th–DETUNE–+8th
+        value_band: REQUIRES_VALIDATION
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  ROTARY:
+    id: '07'
+    color: Light blue
+    explanation: Simulates the swirling sound of a rotary speaker cabinet.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  UNI-V:
+    id: 08
+    color: Light blue
+    explanation: Models the Uni-Vibe effect from 1960s rock.
+    parameters:
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  DELAY:
+    id: 09
+    color: White
+    explanation: Creates echo-like effects; intended as a secondary delay.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  OVERTONE:
+    id: 0A
+    color: Light blue
+    explanation: Adds octave harmonics above and below the original tone.
+    parameters:
+      UPPER:
+        label: UPPER
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LOWER:
+        label: LOWER
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      D. LEVEL:
+        label: D. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+DELAY_MODES:
+  STANDARD:
+    id: '00'
+    color: White
+    explanation: Basic digital delay with 10–800 ms range.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  ANALOG:
+    id: '01'
+    color: White
+    explanation: Warm, analog-style delay tone.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TAPE:
+    id: '02'
+    color: White
+    explanation: Simulates the modulation of tape echo units.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  WARM:
+    id: '03'
+    color: White
+    explanation: Soft and rounded digital delay tone.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  MODULATE:
+    id: '04'
+    color: White
+    explanation: Delay with added modulation for texture.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  REVERSE:
+    id: '05'
+    color: White
+    explanation: Reverse playback-style delay.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      BALANCE:
+        label: BALANCE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TEMPO:
+    id: '06'
+    color: White
+    explanation: Tap tempo delay using rhythmic subdivisions.
+    parameters:
+      NOTE:
+        label: NOTE
+        type: numeric
+        ui_range: 𝅘𝅥𝅮 – 𝅘𝅥
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TERA ECHO:
+    id: '07'
+    color: White
+    explanation: Dynamic, ambient echo effect using MDP.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  SHIMMER:
+    id: 08
+    color: White
+    explanation: Delay with pitch-shifted shimmer effect.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  PHRASE LOOP:
+    id: 09
+    color: White
+    explanation: Looper for practice or layering performances.
+    parameters:
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  +REVERB:
+    id: 0A
+    color: White
+    explanation: Combination of delay and reverb.
+    parameters:
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+REVERB_MODES:
+  ROOM:
+    id: '00'
+    color: Blue-green
+    explanation: Simulates small room reflections.
+    parameters:
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–49
+        value_band: REQUIRES_VALIDATION
+  HALL:
+    id: '01'
+    color: Blue-green
+    explanation: Simulates concert hall reverberation.
+    parameters:
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–49
+        value_band: REQUIRES_VALIDATION
+  SPRING:
+    id: '02'
+    color: Blue-green
+    explanation: Models the classic spring reverb sound.
+    parameters:
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–49
+        value_band: REQUIRES_VALIDATION
+PEDAL_FX_MODES:
+  WAH:
+    id: '00'
+    color: Pink
+    explanation: Classic wah effect controlled by expression pedal.
+    parameters: {}
+  VOICE:
+    id: '01'
+    color: Pink
+    explanation: Creates vocal-like vowel sound.
+    parameters: {}
+  +1 OCT:
+    id: '02'
+    color: Pink
+    explanation: Pitch shift up to +1 octave using pedal.
+    parameters: {}
+  +2 OCT:
+    id: '03'
+    color: Pink
+    explanation: Pitch shift up to +2 octaves using pedal.
+    parameters: {}
+  -1 OCT:
+    id: '04'
+    color: Pink
+    explanation: Pitch shift down to -1 octave using pedal.
+    parameters: {}
+  -2 OCT:
+    id: '05'
+    color: Pink
+    explanation: Pitch shift down to -2 octaves using pedal.
+    parameters: {}
+  FREEZE:
+    id: '06'
+    color: Pink
+    explanation: Engages a freeze effect that holds the current tone.
+    parameters: {}
+  OSC DELAY:
+    id: '07'
+    color: Pink
+    explanation: Uses pedal to modulate delay feedback/time oscillation.
+    parameters: {}
+  OD/DS:
+    id: 08
+    color: Orange
+    explanation: Controls DRIVE in OD/DS section using pedal.
+    parameters: {}
+  MOD RATE:
+    id: 09
+    color: Light blue
+    explanation: Controls RATE parameter of MOD effect using pedal.
+    parameters: {}
+  DELAY LEVEL:
+    id: 0A
+    color: White
+    explanation: Controls delay level in DELAY section using pedal.
+    parameters: {}
+EQFX2_MODES:
+  PHASER:
+    id: '00'
+    color: Green
+    explanation: Out-of-phase modulation with selectable SCRIPT mode.
+    parameters:
+      MODE_PHASER:
+        label: MODE_PHASER
+        type: symbolic
+        values:
+        - NORMAL
+        - SCRIPT
+        value_band: REQUIRES_VALIDATION
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      RESONANCE:
+        label: RESONANCE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  TREM/PAN:
+    id: '01'
+    color: Green
+    explanation: Cyclic volume change (Tremolo) or stereo panning.
+    parameters:
+      MODE_TREMPAN:
+        label: MODE_TREMPAN
+        type: symbolic
+        values:
+        - TREMOLO
+        - PAN
+        value_band: REQUIRES_VALIDATION
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  BOOST:
+    id: '02'
+    color: Yellow
+    explanation: Selectable MID, CLEAN, or TREBLE boost.
+    parameters:
+      MODE_BOOST:
+        label: MODE_BOOST
+        type: symbolic
+        values:
+        - MID
+        - CLEAN
+        - TREBLE
+        value_band: REQUIRES_VALIDATION
+      DRIVE:
+        label: DRIVE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TONE:
+        label: TONE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  DELAY:
+    id: '03'
+    color: White
+    explanation: Secondary delay in EQ/FX2 block with selectable type.
+    parameters:
+      MODE_DELAY:
+        label: MODE_DELAY
+        type: symbolic
+        values:
+        - STANDARD
+        - ANALOG
+        - TAPE
+        value_band: REQUIRES_VALIDATION
+      TIME:
+        label: TIME
+        type: numeric
+        ui_range: 10–800
+        value_band: REQUIRES_VALIDATION
+      FEEDBACK:
+        label: FEEDBACK
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  CHORUS:
+    id: '04'
+    color: Light blue
+    explanation: Selectable MONO, STEREO, or CE-1 chorus effects.
+    parameters:
+      MODE_CHORUS:
+        label: MODE_CHORUS
+        type: symbolic
+        values:
+        - MONO
+        - STEREO
+        - CE-1
+        value_band: REQUIRES_VALIDATION
+      RATE:
+        label: RATE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      DEPTH:
+        label: DEPTH
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      E. LEVEL:
+        label: E. LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+  EQ:
+    id: '05'
+    color: Green
+    explanation: Three-band equalizer with level control.
+    parameters:
+      BASS:
+        label: BASS
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      MIDDLE:
+        label: MIDDLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      TREBLE:
+        label: TREBLE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+      LEVEL:
+        label: LEVEL
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
+NS_MODES:
+  NS:
+    id: '00'
+    color: N/A
+    explanation: Reduces noise and hum. Adjustable threshold 0–50.
+    parameters:
+      THRESHOLD:
+        label: THRESHOLD
+        type: numeric
+        ui_range: 0–50
+        value_band: REQUIRES_VALIDATION
+CTL_MODES:
+  CTL:
+    id: '00'
+    color: N/A
+    explanation: Assigns footswitch to toggle effect blocks or override parameters.
+    parameters:
+      FUNCTION:
+        label: FUNCTION
+        type: symbolic
+        values:
+        - PARAMETER
+        - EFFECT ON/OFF
+        value_band: REQUIRES_VALIDATION
+      MODE_CTL:
+        label: MODE_CTL
+        type: symbolic
+        values:
+        - MOMENT
+        - TOGGLE
+        value_band: REQUIRES_VALIDATION
+      TARGET:
+        type: contextual
+        note: Depends on FUNCTION. When FUNCTION=PARAMETER, this represents a 16-bit
+          index into the global flattened parameter list.
+      VALUE:
+        label: VALUE
+        type: numeric
+        ui_range: 0–99
+        byte_mapping: 00–63
